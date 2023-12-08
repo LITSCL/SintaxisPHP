@@ -1,0 +1,2 @@
+<h1>Detalle de la pelicula</h1>
+<a href="{{ url('/peliculas', ['pagina' => 12]) }}">Ir al listado</a> <!-- El método "url" recibe por parámetro la url a la cual se quiere redirigir, también se puede envíar un segundo parámetro el cual es un array asociativo donde cada indice indica un parámetro get. --> 

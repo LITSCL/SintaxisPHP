@@ -1,0 +1,99 @@
+index: #Creando la ruta llamada "index", con url "/casa", la cual ejecuta el metodo "index" del controlador "HomeController".
+    path: /casa
+    controller: App\Controller\HomeController::index
+  
+animal: #Asignando una ruta al metodo "animal" del controlador "HomeController" con parametro obligatorio.
+    path: /animal/{nombre}
+    controller: App\Controller\HomeController::animal
+  
+animales: #Asignando una ruta al metodo "animales" del controlador "HomeController" con parametro obligatorio.
+    path: /animales
+    controller: App\Controller\HomeController::animales
+  
+pelicula: #Asignando una ruta al metodo "pelicula" del controlador "HomeController" con parametro opcional.
+    path: /pelicula/{nombre?} #Al colococar "?" se indica que el parametro es opcional.
+    controller: App\Controller\HomeController::pelicula
+    defaults: {nombre: "Django"} #Indicando el valor de los parametros opcionales en caso de que no llegen.
+  
+persona: #Asignando una ruta al metodo "persona" del controlador "HomeController" con 2 parametros opcional.
+    path: /persona/{nombre?}/{apellido?}/{edad?} #Al colococar "?" se indica que el parametro es opcional.
+    controller: App\Controller\HomeController::persona
+    defaults: {nombre: "Daniel", apellido: "Alvarez", edad: "24"} #Indicando el valor de los parametros opcionales en caso de que no llegen.
+    methods: [POST, GET] #Indicando los metodos soportados para acceder a la ruta.
+    requirements:
+      nombre: "[a-zA-Z]+" #Aplicando una expresion regular al parametro "nombre" (Solo soporta letras).
+      apellido: "[a-zA-Z]+" #Aplicando una expresion regular al parametro "apellido" (Solo soporta letras).
+      edad: "[0-9]+" #Aplicando una expresion regular al parametro "edad" (Solo soporta numeros).
+  
+redirigir: #Asignando una ruta al metodo "redirigir" del controlador "HomeController".
+    path: /redirigir
+    controller: App\Controller\HomeController::redirigir
+ 
+plantilla: #Asignando una ruta al metodo "plantilla" del controlador "HomeController".
+    path: /plantilla
+    controller: App\Controller\HomeController::plantilla
+
+variable: #Asignando una ruta al metodo "variable" del controlador "HomeController".
+    path: /variable
+    controller: App\Controller\HomeController::variable
+  
+utilizando_include: #Asignando una ruta al metodo "utilizando_include" del controlador "HomeController".
+    path: /utilizando-include
+    controller: App\Controller\HomeController::utilizandoInclude
+  
+filtros: #Asignando una ruta al metodo "filtros" del controlador "HomeController".
+    path: /filtros
+    controller: App\Controller\HomeController::filtros
+  
+juego: #Asignando una ruta al metodo "juego" del controlador "HomeController".
+    path: /juego
+    controller: App\Controller\JuegoController::index
+  
+juego_formulario_crear_juego: #Asignando una ruta al metodo "formularioCrearJuego" del controlador "JuegoController".
+    path: /juego/formulario-crear-juego
+    controller: App\Controller\JuegoController::formularioCrearJuego
+  
+juego_crear_juego: #Asignando una ruta al metodo "crearJuego" del controlador "JuegoController".
+    path: /juego/crear-juego
+    controller: App\Controller\JuegoController::crearJuego
+    methods: [POST]
+  
+juego_formulario_abstraido: #Asignando una ruta al metodo "formularioAbstraido" del controlador "JuegoController".
+    path: /juego/formulario-abstraido
+    controller: App\Controller\JuegoController::formularioAbstraido
+
+juego_validar_correo: #Asignando una ruta al metodo "validarCorreo" del controlador "JuegoController".
+    path: /juego/validar-correo/{correo}
+    controller: App\Controller\JuegoController::validarCorreo
+
+juego_save: #Asignando una ruta al metodo "save" del controlador "JuegoController".
+    path: /juego/save
+    controller: App\Controller\JuegoController::save
+  
+juego_find: #Asignando una ruta al metodo "find" del controlador "JuegoController".
+    path: /juego/find/{id}
+    controller: App\Controller\JuegoController::find
+  
+juego_find_all: #Asignando una ruta al metodo "findAll" del controlador "JuegoController".
+    path: /juego/find-all
+    controller: App\Controller\JuegoController::findAll
+  
+juego_find_mejorado: #Asignando una ruta al metodo "findAllMejorado" del controlador "JuegoController".
+    path: /juego/find-mejorado/{id}
+    controller: App\Controller\JuegoController::findMejorado
+
+juego_get_all: #Asignando una ruta al metodo "getAll" del controlador "JuegoController".
+    path: /juego/get-all
+    controller: App\Controller\JuegoController::getAll
+  
+juego_update: #Asignando una ruta al metodo "update" del controlador "JuegoController".
+    path: /juego/update/{id}
+    controller: App\Controller\JuegoController::update
+  
+juego_delete: #Asignando una ruta al metodo "delete" del controlador "JuegoController".
+    path: /juego/delete/{id}
+    controller: App\Controller\JuegoController::delete
+  
+juego_custom_query: #Asignando una ruta al metodo "customQuery" del controlador "JuegoController".
+    path: /juego/custom-query
+    controller: App\Controller\JuegoController::customQuery

@@ -1,0 +1,88 @@
+<h1>{{ titulo }}</h1>
+
+{# Trabajar con Arrays. #}
+
+<h3>Animales Terrestres</h3>
+
+{# Array con indices. #}
+{{ dump(animalesTerrestres) }} {# El metodo "dump" (Similar a "var_dump") permite mostrar el contenido de una variable. #}
+
+{{ animalesTerrestres[0] }} {# Mostrando el indice "0" del Array. #}
+
+<h3>Animales Voladores</h3>
+
+{# Array asociativo. #}
+{{ dump(animalesVoladores) }}
+
+{{ animalesVoladores.pajaro1 ~ " => " ~ "Es un hermoso ejemplar" }} {# El signo "~" permite concatenar. #}
+
+<h2>Estructuras de control en Twig</h2>
+
+<h3>Condicional IF</h3>
+
+{% if animalesVoladores.pajaro2 == "Picaflor" %}
+	<p>Correctamente, el segundo  animal volador si es un "Picaflor".</p>
+{% else %}
+	<p>Incorrecto, el segundo animal volador no es un "Picaflor".</p>
+{% endif %}
+
+<h3>Condicional IF con Clausula Start</h3>
+
+<h4>El segundo animal volador comienza con "Pica"</h4>
+{% if animalesVoladores.pajaro2 starts with "Pica" %}
+	<p>Si</p>
+{% else %}
+	<p>No</p>
+{% endif %}
+
+<h3>Condicional IF con Clausula End</h3>
+
+<h4>El segundo animal volador termina con "flor"</h4>
+{% if animalesVoladores.pajaro2 ends with "flor" %}
+	<p>Si</p>
+{% else %}
+	<p>No</p>
+{% endif %}
+
+<h3>Bucle</h3>
+{% if animalesTerrestres|length >= 1 %} {# Verificando que hayan datos en el Array. #}
+	<ul>
+	{%  for animal in animalesTerrestres %} {# Recorriendo el Array mediante un bucle "for". #}
+		<li>{{ animal }}</li>
+	{% endfor %}
+	</ul>
+{% endif %}
+
+<ul>
+{% for i in 0..10 %} {# Para recorrer un rango de numeros en un bucle "for", se debe utilizar la nomenclatura de "..", en este caso se indica que se recorre el bucle de 0 hasta 10 (0..10) #}
+	<li>{{ i }}</li>
+{% endfor %}
+</ul>
+
+<h2>Funciones predefinidas en Twig</h2>
+
+<hr/>
+
+<h3>Obtener el numero mas chico de un Array (Metodo: "min")</h3>
+
+{{ min([9, 11, 6, 99, 2, 43, 902]) }}
+
+<hr/>
+
+<h3>Obtener el numero mas grande de un Array (Metodo: "max")</h3>
+
+{{ max([9, 11, 6, 99, 2, 43, 902]) }}
+
+<hr/>
+
+<h3>Obtener un valor aleatorio de un indice de un Array (Metodo: "random")</h3>
+
+{{ random([9, 11, 6, 99, 2, 43, 902]) }}
+
+<hr/>
+
+<h3>Generar un rango de numeros "Ideal para usarlo en bucles" (Metodo: "range")</h3>
+
+{% for i in range(0, 100, 5) %} {# El primer parametro indica desde donde comenzar, el segundo donde terminar y el tercero el aumento de la variable por cada iteracion. #}
+	{{ i }}<br/>
+{% endfor %}

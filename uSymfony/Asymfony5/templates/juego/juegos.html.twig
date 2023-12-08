@@ -1,0 +1,11 @@
+<ul>
+{% for juego in juegos %}
+	<li>
+		<ul>
+			<li>ID: {{ juego.id }}</li>
+			<li>Nombre: {{ juego.nombre }}</li>
+			<li>Year: {{ juego.year }}</li>
+		</ul>
+	</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,32 @@
+{# Las plantillas son similares a los includes, permiten generar estructuras importables, con la diferencia en que se pueden generar variables las cuales se inician en la vista. #}
+
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>{% block titulo %} Inicio {% endblock %} - Symfony</title>
+</head>
+<body>
+	<div id="cabecera">
+		{% block cabecera %}
+			<h1>Cabecera por defecto del layout</h1>
+		{% endblock %}
+	</div>
+	
+	<hr/>
+	
+	<section id="contenido">
+		{% block contenido %}
+			<p>Contenido por defecto del layout</p>
+		{% endblock %}
+	</section>
+	
+	<hr/>
+	
+	<footer id="footer">
+		{% block pie %}
+			<p>Pie por defecto del layout</p>
+		{% endblock %}
+	</footer>
+</body>
+</html>

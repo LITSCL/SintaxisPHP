@@ -1,0 +1,15 @@
+{# Extender de una plantilla permite reutilizar codigo generico, el cual puede ser modificado desde donde se este importando. #}
+
+{% extends 'layouts/master.html.twig' %} {# Aqui se incluye el layout. #}
+
+{% block titulo %} Plantilla {% endblock %} {# Al seleccionar un bloque del layout, se puede cambiar el contenido que hay dentro. #}
+
+{% block cabecera %}
+	{{ parent() }} {# La funcion "parent" permite evitar que se borre el contenido por defecto que tiene el bloque al añadir nuevo contenido. #}
+	<h2>Todo este texto fue agregado desde la plantilla</h2>
+{% endblock %}
+
+{% block contenido %} 
+	<p>Contenido cambiado desde la plantilla</p>
+{% endblock %}
+
