@@ -6,7 +6,7 @@ class Auto {
     public $modelo;
     public $velocidad;
     
-    //1. Creación del constructor.
+    //1. CreaciÃ³n del constructor.
     public function __construct($color, $marca, $modelo, $velocidad) {
         $this->color = $color;
         $this->marca = $marca;

@@ -11,8 +11,8 @@ class JuegoType extends AbstractType
 	public function buildForm($builder, $options)
 	{
 		$builder->setMethod("POST")
-				->add("nombre", TextType::class, ["label" => "Nombre"]) 
-				->add("year", TextType::class, ["label" => "Year"])
-				->add("boton", SubmitType::class, ["label" => "Crear", "attr" => ["class" => "btn btn-success"]]);
+			->add("nombre", TextType::class, ["label" => "Nombre"]) 
+			->add("year", TextType::class, ["label" => "Year"])
+			->add("boton", SubmitType::class, ["label" => "Crear", "attr" => ["class" => "btn btn-success"]]);
 	}
 }

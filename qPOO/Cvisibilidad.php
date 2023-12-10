@@ -1,9 +1,9 @@
 <?php
 class Auto {
     
-    public $color; //PUBLIC: Se puede acceder al atributo/método desde cualquier parte del programa.
-    protected $marca; //PROTECTED: Se puede acceder al atributo/método desde la clase que los definen o las clases que heredan de esta clase.
-    private $modelo; //PRIVATE: Se puede acceder al atributo/método solamente desde esta clase.
+    public $color; //PUBLIC: Se puede acceder al atributo/mÃ©todo desde cualquier parte del programa.
+    protected $marca; //PROTECTED: Se puede acceder al atributo/mÃ©todo desde la clase que los definen o las clases que heredan de esta clase.
+    private $modelo; //PRIVATE: Se puede acceder al atributo/mÃ©todo solamente desde esta clase.
     public $velocidad;
     
     public function __construct($color, $marca, $modelo, $velocidad) {

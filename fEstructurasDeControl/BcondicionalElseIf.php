@@ -13,13 +13,13 @@
 $numero1 = 10;
 $numero2 = 10;
 
-if ($numero1 < $numero2) { //En esta instrucción se evalúa la condición (Si se cumple se ejecuta este código y se ignora el proximo else if).
+if ($numero1 < $numero2) { //En esta instrucciÃ³n se evalÃºa la condiciÃ³n (Si se cumple se ejecuta este cÃ³digo y se ignora el proximo else if).
     echo $numero1 . " es menor que " . $numero2; 
 }
-else if ($numero1 > $numero2) { //Si la condición anterior no se cumple, se evalúa la de este else if, si se cumple se ejecuta y se ignoran los proximos else if o else.
+else if ($numero1 > $numero2) { //Si la condiciÃ³n anterior no se cumple, se evalÃºa la de este else if, si se cumple se ejecuta y se ignoran los proximos else if o else.
     echo $numero1 . " es mayor que " . $numero2; 
 }
-else { //Si ninguna condición se cumplió, se ejecuta este else.
+else { //Si ninguna condiciÃ³n se cumpliÃ³, se ejecuta este else.
     echo "Ambos numeros son iguales";
 }
 ?>

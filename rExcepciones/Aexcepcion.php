@@ -1,10 +1,10 @@
 <?php
-// La estructura Try-Catch permite capturar una excepción.
+// La estructura Try-Catch permite capturar una excepciÃ³n.
 try {
-	throw new Exception("Hay un error de logica"); //NOTA: Aquí se está lanzando una excepción a proposito.
-} catch (Exception $ex) { //En caso de que ocurra una excepción se ejecuta el código del catch.
+	throw new Exception("Hay un error de logica"); //NOTA: AquÃ­ se estÃ¡ lanzando una excepciÃ³n a proposito.
+} catch (Exception $ex) { //En caso de que ocurra una excepciÃ³n se ejecuta el cÃ³digo del catch.
 	echo "Ocurrio un error";
-} finally { //El código del "finally" se ejecuta haya ocurrido o no una excepción.
+} finally { //El cÃ³digo del "finally" se ejecuta haya ocurrido o no una excepciÃ³n.
 	echo "<br>Yo me voy a ejecutar igual";
 }
 

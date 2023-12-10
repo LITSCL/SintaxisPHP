@@ -12,7 +12,7 @@
 $numero1 = 35;
 $numero2 = 35;
 
-$numero1+=5; //Utilizando operador de asignación en la variable (Es lo mismo que $numero1 = $numero1 + 5).
+$numero1+=5; //Utilizando operador de asignaciÃ³n en la variable (Es lo mismo que $numero1 = $numero1 + 5).
 $numero2-=5;
 
 echo $numero1;

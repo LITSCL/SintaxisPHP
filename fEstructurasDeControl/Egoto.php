@@ -12,7 +12,7 @@
 <?php
 echo "<p>Hola Mundo</p>";
 
-goto marca; //El operador "goto" permite saltarse una sección de código utilizando una marca (El operador goto busca la marca y al encontrarla se salta todo el código que los separa).
+goto marca; //El operador "goto" permite saltarse una secciÃ³n de cÃ³digo utilizando una marca (El operador goto busca la marca y al encontrarla se salta todo el cÃ³digo que los separa).
 
 echo "<p>Instruccion 1</p>";
 echo "<p>Instruccion 2</p>";

@@ -10,7 +10,7 @@
 </html>
 
 <?php
-//Declaración e iniciación de constantes (Se deben nombrar en mayusculas).
+//DeclaraciÃ³n e iniciaciÃ³n de constantes (Se deben nombrar en mayusculas).
 define("NOMBRE", "Daniel Alvarez");
 define("EDAD", 23);
 

@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-array_push($nombres, "Nicolas"); //La función array_psuh(), permite agregar un nuevo valor al Array (El valor ocupará el último indice).
+array_push($nombres, "Nicolas"); //La funciÃ³n array_psuh(), permite agregar un nuevo valor al Array (El valor ocuparÃ¡ el Ãºltimo indice).
 
 foreach ($nombres as $nombre) {
     echo $nombre . "<br/>";

@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-$nombresReverse = array_reverse($nombres); //La función array_reverse(), retorna el Array entregado por parámetro pero ordenado al revés.
+$nombresReverse = array_reverse($nombres); //La funciÃ³n array_reverse(), retorna el Array entregado por parÃ¡metro pero ordenado al revÃ©s.
 
 foreach ($nombresReverse as $nombre) {
     echo $nombre . "<br/>";

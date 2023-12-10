@@ -10,7 +10,7 @@
 </html>
 
 <?php
-//Declaración e iniciación de variables.
+//DeclaraciÃ³n e iniciaciÃ³n de variables.
 $numero1 = 10;
 $numero2 = 10.3;
 $texto1 = ("Hola Mundo");

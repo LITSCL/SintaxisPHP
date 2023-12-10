@@ -13,11 +13,11 @@
 //Las funciones predefinidas son funciones que vienen creadas por defecto en php.
 
 //Funciones de fechas.
-echo "La fecha es: " . date("d-m-Y") . "<br/>"; //La funci髇 date() permite sonseguir la fecha en el formato especificado por par醡etro.
+echo "La fecha es: " . date("d-m-Y") . "<br/>"; //La funci贸n date() permite sonseguir la fecha en el formato especificado por par谩metro.
 
-//Funciones matem醫icas.
-echo "La raiz cuadrada de 9 es: " . sqrt(9) . "<br/>"; //La funci髇 sqrt() permite calcular la ra韟 cuadrada del n鷐ero que se entrega por par醡etro.
-echo "Numero aleatorio entre 10 y 40: " . rand(10, 40) . "<br/>"; //La funci髇 rand() permite calcular un valor aleatorio entre el primer y segundo par醡etro entregado.
-echo "El numero pi es: " . pi() . "<br/>"; //La funci髇 pi obtiene el n鷐ero pi().
-echo "El nuemero 5.891234 redondeado es: " . round(5.891234) . "<br/>"; //Esta funci髇 permite redondear un n鷐ero entregado por par醡etro.
+//Funciones matem谩ticas.
+echo "La raiz cuadrada de 9 es: " . sqrt(9) . "<br/>"; //La funci贸n sqrt() permite calcular la ra铆z cuadrada del n煤mero que se entrega por par谩metro.
+echo "Numero aleatorio entre 10 y 40: " . rand(10, 40) . "<br/>"; //La funci贸n rand() permite calcular un valor aleatorio entre el primer y segundo par谩metro entregado.
+echo "El numero pi es: " . pi() . "<br/>"; //La funci贸n pi obtiene el n煤mero pi().
+echo "El nuemero 5.891234 redondeado es: " . round(5.891234) . "<br/>"; //Esta funci贸n permite redondear un n煤mero entregado por par谩metro.
 ?>

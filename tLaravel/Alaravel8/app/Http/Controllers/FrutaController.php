@@ -9,14 +9,14 @@ class FrutaController extends Controller
 {
 	public function listar()
 	{
-		$frutas = DB::table("fruta")->get(); //El método "get" retorna un array con los registros de la base de datos (Array con objetos).
-		//$frutas = DB::table("fruta")->orderBy("id", "desc")->get(); //Al utilizar el método "orderBy", se puede ordenar los registros (Primer parámetro indica la columna, segundo parámetro indica el orden).
+		$frutas = DB::table("fruta")->get(); //El mÃ©todo "get" retorna un array con los registros de la base de datos (Array con objetos).
+		//$frutas = DB::table("fruta")->orderBy("id", "desc")->get(); //Al utilizar el mÃ©todo "orderBy", se puede ordenar los registros (Primer parÃ¡metro indica la columna, segundo parÃ¡metro indica el orden).
 		return view("fruta.listar", ["frutas" => $frutas]); //Retornando una vista y enviando el array de registros.
 	}
 	
 	public function buscar($id)
 	{
-		$fruta = DB::table("fruta")->where("id", "=", $id)->first(); //El método "where" permite traer registros en base a una condición (Primer parámetro = nombre de columna; Segundo parámetro es el signo de comparación; Tercer parámetro es el valor de la columna), el método first retorna un objeto (Si se utilizara get, retornaria un array con un único elemento).
+		$fruta = DB::table("fruta")->where("id", "=", $id)->first(); //El mÃ©todo "where" permite traer registros en base a una condiciÃ³n (Primer parÃ¡metro = nombre de columna; Segundo parÃ¡metro es el signo de comparaciÃ³n; Tercer parÃ¡metro es el valor de la columna), el mÃ©todo first retorna un objeto (Si se utilizara get, retornaria un array con un Ãºnico elemento).
 		return view("fruta.buscar", ["fruta" => $fruta]); //Retornando una vista y enviando el array de registros.
 	}
 	
@@ -27,18 +27,18 @@ class FrutaController extends Controller
 	
 	public function create(Request $request)
 	{
-		DB::table("fruta")->insert(array( //El método "insert", recibe como parámetro un array asociativo que representa el registro a almacenar en la base de datos.
+		DB::table("fruta")->insert(array( //El mÃ©todo "insert", recibe como parÃ¡metro un array asociativo que representa el registro a almacenar en la base de datos.
 			"nombre" => $request->input("nombre"),
 			"descripcion" => $request->input("descripcion"),
 			"precio" => $request->input("precio"),
 			"fecha" => date("Y-m-d")
 		));
-		return redirect()->action("App\Http\Controllers\FrutaController@listar")->with("estado", "Fruta creada exitosamente"); //Cuando se usa el método "with" en el método "action", los datos se envían en forma de sesión flash (Son sesiones que se eliminan luego de ser cargada la vista).
+		return redirect()->action("App\Http\Controllers\FrutaController@listar")->with("estado", "Fruta creada exitosamente"); //Cuando se usa el mÃ©todo "with" en el mÃ©todo "action", los datos se envÃ­an en forma de sesiÃ³n flash (Son sesiones que se eliminan luego de ser cargada la vista).
 	}
 	
 	public function borrar($id)
 	{
-		$fruta = DB::table("fruta")->delete($id); //El método "delete" permite borrar un registro entregando como parámetro la clave primaria.
+		$fruta = DB::table("fruta")->delete($id); //El mÃ©todo "delete" permite borrar un registro entregando como parÃ¡metro la clave primaria.
 		//$fruta = DB::table("fruta")->where("id", $id)->delete(); //Esta es otra forma de borrar un registro.
 		return redirect()->action("App\Http\Controllers\FrutaController@listar")->with("estado", "Fruta borrada exitosamente"); 
 	}
@@ -52,7 +52,7 @@ class FrutaController extends Controller
 	public function update(Request $request)
 	{
 		$id = $request->input("id");
-		$fruta = DB::table("fruta")->where("id", "=", $id)->update(array( //Para actualizar un registro primero se debe buscar con el método "where", luego aplicar el método "update" y entregar un array asociativo con los valores de las columnas.
+		$fruta = DB::table("fruta")->where("id", "=", $id)->update(array( //Para actualizar un registro primero se debe buscar con el mÃ©todo "where", luego aplicar el mÃ©todo "update" y entregar un array asociativo con los valores de las columnas.
 				"nombre" => $request->input("nombre"),
 				"descripcion" => $request->input("descripcion"),
 				"precio" => $request->input("precio"),

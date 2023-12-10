@@ -10,12 +10,12 @@
 </html>
 
 <?php 
-//NOTA: Un array es una colección de datos, basicamente una variable que puede almacenar muchos datos distintos.
+//NOTA: Un array es una colecciÃ³n de datos, basicamente una variable que puede almacenar muchos datos distintos.
 
-//Declaración e iniciación de un array unidimensional.
+//DeclaraciÃ³n e iniciaciÃ³n de un array unidimensional.
 $personas = array("nombre" => "Daniel", "apellido" => "Alvarez"); //Un Array asociativo permite utilizar "Claves" en vez de "Indices".
 
 echo $personas["nombre"]; //Imprimiendo el valor del indice nombre.
 
-//NOTA: Cuando se envían datos desde la url (GET), lo que llega es un array asociativo.
+//NOTA: Cuando se envÃ­an datos desde la url (GET), lo que llega es un array asociativo.
 ?>

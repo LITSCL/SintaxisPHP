@@ -11,7 +11,7 @@
 	
 <?php
 function retornarNombre($nombre) {
-    return "El nombre es : " . $nombre; //Aquí la función retorna un String.
+    return "El nombre es : " . $nombre; //AquÃ­ la funciÃ³n retorna un String.
 }
 
 echo retornarNombre("Daniel");

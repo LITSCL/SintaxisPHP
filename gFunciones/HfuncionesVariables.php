@@ -11,7 +11,7 @@
 	
 <?php
 function buenosDias() {
-    return "Hola! Buenos días";
+    return "Hola! Buenos dÃ­as";
 }
 
 function buenasTardes() {
@@ -22,6 +22,6 @@ function buenasNoches() {
     return "Hola! Buenas noches";
 }
 
-$horario = "buenasNoches"; //Almacenando un String normal en una variable (Nada extraño).
-echo $horario(); //Aquí se esta llamando a la función buenasNoches().
+$horario = "buenasNoches"; //Almacenando un String normal en una variable (Nada extraÃ±o).
+echo $horario(); //AquÃ­ se esta llamando a la funciÃ³n buenasNoches().
 ?>

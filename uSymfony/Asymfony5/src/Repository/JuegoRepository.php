@@ -14,7 +14,7 @@ class JuegoRepository extends ServiceEntityRepository //Todas las clases reposit
 		parent::__construct($mr, Juego::class);
 	}
 	
-	//El patrón repositorio es similar al patrón DAO (Solo se debe usar para crear métodos findBy).
+	//El patrÃ³n repositorio es similar al patrÃ³n DAO (Solo se debe usar para crear mÃ©todos findBy).
 	
 	public function findByYear($year)
 	{

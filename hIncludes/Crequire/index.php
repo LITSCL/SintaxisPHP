@@ -7,12 +7,12 @@
 <body>
 
 <?php 
-//NOTA: Incluir con require es lo mismo que un include, la diferencia esta en los errores, si llega a ocurrir un error al incluir con require PHP no ejecutará la página y mostralar los errores.
-require "includes/cabecera.py"; //Esta instrucción fallará, pero require no ejecutará ninguna instrucción y solo mostrará el error en el navegador.
+//NOTA: Incluir con require es lo mismo que un include, la diferencia esta en los errores, si llega a ocurrir un error al incluir con require PHP no ejecutarÃ¡ la pÃ¡gina y mostralar los errores.
+require "includes/cabecera.py"; //Esta instrucciÃ³n fallarÃ¡, pero require no ejecutarÃ¡ ninguna instrucciÃ³n y solo mostrarÃ¡ el error en el navegador.
 ?>
 	<div>
 	   <?php 
-	   echo $mensaje; //Al incluir un fichero PHP, también se puede hacer uso de sus variables.
+	   echo $mensaje; //Al incluir un fichero PHP, tambiÃ©n se puede hacer uso de sus variables.
 	   ?>
 	</div>
 	

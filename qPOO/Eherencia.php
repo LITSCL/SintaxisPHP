@@ -37,7 +37,7 @@ class Persona {
     }
 }
 
-class Informatico extends Persona { //La clase "Informatico" hereda de la clase "Persona" (Hereda atributos y métodos).
+class Informatico extends Persona { //La clase "Informatico" hereda de la clase "Persona" (Hereda atributos y mÃ©todos).
     
     public $lenguajeFavorito;
 
@@ -81,5 +81,5 @@ var_dump($informatico);
 
 echo "<br/>";
 
-echo $informatico->caminar(); //Este método se hereda de la clase "Persona".
+echo $informatico->caminar(); //Este mÃ©todo se hereda de la clase "Persona".
 ?>

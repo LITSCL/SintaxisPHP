@@ -8,7 +8,7 @@ class Auto {
     public $modelo;
     public $velocidad;
     
-    //2. Métodos de la clase.
+    //2. MÃ©todos de la clase.
     public function getColor() {
         return $this->color;
     }
@@ -57,5 +57,5 @@ var_dump($miAuto); //Mostrando los datos del objeto.
 
 echo "<br/>";
 
-var_dump($miAuto->getColor()); //Llamando un método de la clase.
+var_dump($miAuto->getColor()); //Llamando un mÃ©todo de la clase.
 ?>

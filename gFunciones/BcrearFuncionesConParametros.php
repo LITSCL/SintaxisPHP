@@ -10,12 +10,12 @@
 </html>
 	
 <?php
-function calculadora($numero1, $numero2) { //Creaci髇 de funci髇 con dos parametros.
-    echo "La suma de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 + $numero2) ."<br/>"; //Contenido de la funci髇.
-    echo "La resta de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 - $numero2) ."<br/>"; //Contenido de la funci髇.
-    echo "La multiplicacion de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 * $numero2) ."<br/>"; //Contenido de la funci髇.
-    echo "La division de " . $numero1 . " entre " . $numero2 . " es: " . ($numero1 / $numero2) ."<br/>"; //Contenido de la funci髇.
+function calculadora($numero1, $numero2) { //Creaci贸n de funci贸n con dos parametros.
+    echo "La suma de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 + $numero2) ."<br/>"; //Contenido de la funci贸n.
+    echo "La resta de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 - $numero2) ."<br/>"; //Contenido de la funci贸n.
+    echo "La multiplicacion de " . $numero1 . " con " . $numero2 . " es: " . ($numero1 * $numero2) ."<br/>"; //Contenido de la funci贸n.
+    echo "La division de " . $numero1 . " entre " . $numero2 . " es: " . ($numero1 / $numero2) ."<br/>"; //Contenido de la funci贸n.
 }
 
-calculadora(20, 20); //Llamada de la funci髇 entregando dos par醡etros.
+calculadora(20, 20); //Llamada de la funci贸n entregando dos par谩metros.
 ?>

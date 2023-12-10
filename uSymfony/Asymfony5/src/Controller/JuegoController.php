@@ -17,33 +17,33 @@ use Symfony\Component\Validator\Constraints\Email; //Necesario para que la clase
 
 class JuegoController extends AbstractController
 {
-    #[Route('/juego', name: 'juego')]
+    #[Route("/juego", name: "juego")]
     public function index(): Response
     {
-        return $this->render('juego/index.html.twig', [
-            'controller_name' => 'JuegoController'
+        return $this->render("juego/index.html.twig", [
+            "controller_name" => "JuegoController"
         ]);
     }
     
-    //FORMULARIO: Método que configura el formulario y renderiza la vista.
+    //FORMULARIO: MÃ©todo que configura el formulario y renderiza la vista.
     public function formularioCrearJuego(Request $request)
     {
     	$juego = new Juego();
     	$formulario = $this->createFormBuilder($juego) //1. Indicando que es un formulario para la clase "Juego".
-					       //->setAction($this->generateUrl("juego_crear_juego")) //2. Indicando a donde envía los datos el formulario (Los envía a la url especificada por parámetro).
-					       ->setMethod("POST") //3. Indicando el método por el que viajan los datos del formulario.
-					       ->add("nombre", TextType::class, ["label" => "Nombre"]) //4. Añadiendo un campo input text.
-					       ->add("year", TextType::class, ["label" => "Year"]) //5. Añadiendo un campo input text.
-					       ->add("boton", SubmitType::class, ["label" => "Crear", "attr" => ["class" => "btn btn-success"]]) //6. Añadiendo el botón del formulario.
-					       ->getForm(); //7. Generar el formulario en base a todas las configuraciones anteriores.
+			//->setAction($this->generateUrl("juego_crear_juego")) //2. Indicando a donde envÃ­a los datos el formulario (Los envÃ­a a la url especificada por parÃ¡metro).
+			->setMethod("POST") //3. Indicando el mÃ©todo por el que viajan los datos del formulario.
+			->add("nombre", TextType::class, ["label" => "Nombre"]) //4. AÃ±adiendo un campo input text.
+			->add("year", TextType::class, ["label" => "Year"]) //5. AÃ±adiendo un campo input text.
+			->add("boton", SubmitType::class, ["label" => "Crear", "attr" => ["class" => "btn btn-success"]]) //6. AÃ±adiendo el botÃ³n del formulario.
+			->getForm(); //7. Generar el formulario en base a todas las configuraciones anteriores.
     	
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     	
-		//NOTA: Este bloque solo es necesario si se desea controlar el formulario en este mismo método (CUANDO NO SE UTILIZA EL METODO "setAction").
+		//NOTA: Este bloque solo es necesario si se desea controlar el formulario en este mismo mÃ©todo (CUANDO NO SE UTILIZA EL METODO "setAction").
 		
 		$formulario->handleRequest($request); //1. Seteando el objeto que es representado por el formulario.
 		
-		if ($formulario->isSubmitted() && $formulario->isValid()) { //2. Verificando si se envió el formulario.
+		if ($formulario->isSubmitted() && $formulario->isValid()) { //2. Verificando si se enviÃ³ el formulario.
 			$entityManager = $this->getDoctrine()->getManager();
 
 			$entityManager->persist($juego);
@@ -51,9 +51,9 @@ class JuegoController extends AbstractController
 			$entityManager->flush(); //3. Almacenando el registro en la base de datos.
 			
 			$session = new Session(); 
-			$session->getFlashBag()->add("mensaje", "Juego creado exitosamente"); //4. Generando una sesión flash.
+			$session->getFlashBag()->add("mensaje", "Juego creado exitosamente"); //4. Generando una sesiÃ³n flash.
 			
-			return $this->redirectToRoute("juego_formulario_crear_juego"); //5. Redireccionando nuevamente al formulario (Para que se vacíe).
+			return $this->redirectToRoute("juego_formulario_crear_juego"); //5. Redireccionando nuevamente al formulario (Para que se vacÃ­e).
 		}
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ class JuegoController extends AbstractController
 		return $this->render("juego/formulario_crear_juego.html.twig", ["formulario" => $formulario->createView()]); //8. Renderizar una vista y enviar el formulario.
     }
     	
-    //FORMULARIO: Método que recibe los datos del formulario.
+    //FORMULARIO: MÃ©todo que recibe los datos del formulario.
     public function crearJuego(Request $request)
     {
     	var_dump($request->get("form"));
@@ -76,7 +76,7 @@ class JuegoController extends AbstractController
     	
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     	
-    	//NOTA: Este bloque solo es necesario si se desea controlar el formulario en este mismo método (CUANDO NO SE UTILIZA EL METODO "setAction").
+    	//NOTA: Este bloque solo es necesario si se desea controlar el formulario en este mismo mÃ©todo (CUANDO NO SE UTILIZA EL METODO "setAction").
     	
     	$formulario->handleRequest($request); 
     	
@@ -104,9 +104,9 @@ class JuegoController extends AbstractController
     	$validador = Validation::createValidator(); 
     	
     	//2. Crear una variable y validar el dato (Al validar se retorna una lista con los errores).
-    	$errores = $validador->validate($correo, [new Email()]); //El método "validate" recibe como primer parámetro el valor a validar y como segundo parámetro un Array con los tipos de validaciones que se desean aplicar al valor.
+    	$errores = $validador->validate($correo, [new Email()]); //El mÃ©todo "validate" recibe como primer parÃ¡metro el valor a validar y como segundo parÃ¡metro un Array con los tipos de validaciones que se desean aplicar al valor.
     	
-    	//3. Verificar si hay errores en la validación.
+    	//3. Verificar si hay errores en la validaciÃ³n.
     	if (count($errores) != 0) {
     		echo "El correo NO es valido";
     		
@@ -146,9 +146,9 @@ class JuegoController extends AbstractController
     	$repositorioJuego = $this->getDoctrine()->getRepository(Juego::class);
     	
     	//2. Buscar el objeto en la base de datos.
-    	$juego = $repositorioJuego->find($id); //El método "find" permite obtener un registro en base a su clave primaria.
+    	$juego = $repositorioJuego->find($id); //El mÃ©todo "find" permite obtener un registro en base a su clave primaria.
     	
-    	//3. Comprobar si existía el registro.
+    	//3. Comprobar si existÃ­a el registro.
     	if (!$juego) {
     		$mensaje = "El juego que buscas no existe";
     	}
@@ -159,7 +159,7 @@ class JuegoController extends AbstractController
     	return new Response($mensaje);
     }
     
-    public function findMejorado(Juego $juego) //Al colocar un objeto mapeado como parámetro de la función, se realiza un find en base a la clave primaria entregada en la petición, por consecuente se obtiene el objeto desde la base de datos.
+    public function findMejorado(Juego $juego) //Al colocar un objeto mapeado como parÃ¡metro de la funciÃ³n, se realiza un find en base a la clave primaria entregada en la peticiÃ³n, por consecuente se obtiene el objeto desde la base de datos.
     {
     	if (!$juego) {
     		$mensaje = "El juego que buscas no existe";
@@ -171,15 +171,15 @@ class JuegoController extends AbstractController
     	return new Response($mensaje);
     }
     
-    public function findAll() //Obtener todos los registros de la base de datos en base a una condición.
+    public function findAll() //Obtener todos los registros de la base de datos en base a una condiciÃ³n.
     {
     	//1. Crear el repositorio del modelo (Permite acceder a datos de la tabla mapeada).
     	$repositorioJuego = $this->getDoctrine()->getRepository(Juego::class);
     	
     	//2. Traer y almacenar todos los registros.
-    	$juegos = $repositorioJuego->findBy(["year" => 2008], ["id" => "DESC"]); //El método "findBy" recibe como primer parámetro un array, en el cual se debe indicar los atributos y los valores, en base a lo anterior se buscan los registros en la base de datos (Similar a una clausula WHERE en SQL). También puede recibir un segundo array con indicaciones de ordenamiento.
+    	$juegos = $repositorioJuego->findBy(["year" => 2008], ["id" => "DESC"]); //El mÃ©todo "findBy" recibe como primer parÃ¡metro un array, en el cual se debe indicar los atributos y los valores, en base a lo anterior se buscan los registros en la base de datos (Similar a una clausula WHERE en SQL). TambiÃ©n puede recibir un segundo array con indicaciones de ordenamiento.
     	
-    	return $this->render('juego/juegos_encontrados.html.twig', [
+    	return $this->render("juego/juegos_encontrados.html.twig", [
     			"juegos" => $juegos
     	]);
     }
@@ -192,7 +192,7 @@ class JuegoController extends AbstractController
     	//2. Traer y almacenar todos los registros.
     	$juegos = $repositorioJuego->findAll();
     	
-    	return $this->render('juego/juegos.html.twig', [
+    	return $this->render("juego/juegos.html.twig", [
     			"juegos" => $juegos
     	]);
     }
@@ -244,8 +244,7 @@ class JuegoController extends AbstractController
     }
     
     public function customQuery()
-    {
-    	
+    {	
     	//1. Consultas presonalizadas con (QUERY BUILDER).
     	
     	//1.1 Crear el repositorio del modelo (Permite acceder a datos de la tabla mapeada).
@@ -273,7 +272,7 @@ class JuegoController extends AbstractController
     	
     	//3. Consultas personalizadas con (SQL).
     	
-    	//3.1 Obtener la conexión a la base de datos.
+    	//3.1 Obtener la conexiÃ³n a la base de datos.
     	//$conexion = $this->getDoctrine()->getConnection();
     	
     	//3.2 Definir la sentencia SQL.
@@ -283,14 +282,14 @@ class JuegoController extends AbstractController
     	//$query = $conexion->query($sql);
     	
     	//3.4 Ejecutar la query.
-    	//$resultado = $query->fetchAll(); //El método "fetchAll" ejecuta la query y los resultados los convierte en un array asociativo.
+    	//$resultado = $query->fetchAll(); //El mÃ©todo "fetchAll" ejecuta la query y los resultados los convierte en un array asociativo.
     	
-    	//4. Consultas personalizada utilizando el patrón repositorio (Similar a patrón DAO).
+    	//4. Consultas personalizada utilizando el patrÃ³n repositorio (Similar a patrÃ³n DAO).
     	
     	//4.1 Crear el repositorio del modelo (Permite acceder a datos de la tabla mapeada).
     	$repositorioJuego = $this->getDoctrine()->getRepository(Juego::class);
     	
-    	//4.2 Almacenar en una variable el retorno de un método del repositorio.
+    	//4.2 Almacenar en una variable el retorno de un mÃ©todo del repositorio.
     	$resultado = $repositorioJuego->findByYear("2022");
     	
     	return new Response(var_dump($resultado));

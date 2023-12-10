@@ -9,7 +9,7 @@
 </body>
 </html>
 <?php
-//A continuación se verifica que existan los 4 primeros campos del formulario y se muestran.
+//A continuaciÃ³n se verifica que existan los 4 primeros campos del formulario y se muestran.
 if (isset($_POST["nombre"]) && isset($_POST["apellido"]) && isset($_POST["clave"]) && isset($_POST["genero"])) {
     echo $_POST["nombre"] . "<br/>";
     echo $_POST["apellido"] . "<br/>";

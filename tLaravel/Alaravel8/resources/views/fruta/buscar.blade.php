@@ -3,5 +3,5 @@
 	{{ $fruta->descripcion }}
 </p>
 
-<a href="{{ url('/fruta/borrar', ['id' => $fruta->id]) }}">Eliminar</a> <!-- El segundo parámetro es un array asociativo el cual indica los parámetros que se envían. -->
+<a href="{{ url('/fruta/borrar', ['id' => $fruta->id]) }}">Eliminar</a> <!-- El segundo parÃ¡metro es un array asociativo el cual indica los parÃ¡metros que se envÃ­an. -->
 <a href="{{ url('/fruta/editar', ['id' => $fruta->id]) }}">Actualizar</a>

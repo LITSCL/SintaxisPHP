@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class PeliculaController extends Controller
 {
-	//Todos los mÈtodos son acciones del controlador (Dicos mÈtodos se acceden desde una ruta configurada).
-	public function index($pagina = 1) //Los par·metros del mÈtodo almacenan los par·metros entregados por la URL.
+	//Todos los m√©todos son acciones del controlador (Dicos m√©todos se acceden desde una ruta configurada).
+	public function index($pagina = 1) //Los par√°metros del m√©todo almacenan los par√°metros entregados por la URL.
 	{ 
 		$titulo = "Listado de mis peliculas";
 		return view("pelicula.index", ["titulo" => $titulo, "pagina" => $pagina]);
@@ -20,7 +20,7 @@ class PeliculaController extends Controller
 	
 	public function redirigir() 
 	{
-		return redirect()->action("App\Http\Controllers\PeliculaController@detalle"); //La funciÛn "redirect->action" recibe como par·metro una ruta a a la cual redirigir (Es una funciÛn de Laravel).
+		return redirect()->action("App\Http\Controllers\PeliculaController@detalle"); //La funci√≥n "redirect->action" recibe como par√°metro una ruta a a la cual redirigir (Es una funci√≥n de Laravel).
 	}
 	
 	public function formulario() 

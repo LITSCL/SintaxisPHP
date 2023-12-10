@@ -45,7 +45,7 @@ class Auto {
         $this->velocidad = $velocidad;
     }
     
-    public function mostrarInformacion(Auto $auto) { //Aquí se esta especificando el tipo de dato que debe tener el parámetro (Esto es muy útil en POO).
+    public function mostrarInformacion(Auto $auto) { //AquÃ­ se esta especificando el tipo de dato que debe tener el parÃ¡metro (Esto es muy Ãºtil en POO).
         $informacion = "<h1>Informacion del Auto:</h1>";
         $informacion.="Color: " . $auto->color . "<br/>";
         $informacion.="Marca: " . $auto->marca . "<br/>";

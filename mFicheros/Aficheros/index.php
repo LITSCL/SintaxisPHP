@@ -1,10 +1,10 @@
 <?php
 //Abrir archivo.
-$archivo = fopen("fichero.txt", "a+"); //El primer parámetro indica la ruta del archivo a abrir y el segundo parámetro indica los permisos que se poseen sobre el archivo (a+ = Read + Write).
+$archivo = fopen("fichero.txt", "a+"); //El primer parÃ¡metro indica la ruta del archivo a abrir y el segundo parÃ¡metro indica los permisos que se poseen sobre el archivo (a+ = Read + Write).
 
 //Leer archivo.
-while (!feof($archivo)) { //El bucle recorre cada línea del archivo.
-    $contenido = fgets($archivo); //El método fgets permite leer el contenido del archivo entregado por parámetro.
+while (!feof($archivo)) { //El bucle recorre cada lÃ­nea del archivo.
+    $contenido = fgets($archivo); //El mÃ©todo fgets permite leer el contenido del archivo entregado por parÃ¡metro.
     echo $contenido . "<br/>";
 }
 

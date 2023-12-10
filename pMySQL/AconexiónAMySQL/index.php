@@ -1,5 +1,5 @@
 <?php
-//1. Establecer datos necesarios para la conexión.
+//1. Establecer datos necesarios para la conexiÃ³n.
 $host = "localhost";
 $usuario = "root";
 $clave = "root";
@@ -9,9 +9,9 @@ $puerto = 3306;
 //2. Conectarse a la base de datos.
 $conexion = mysqli_connect($host, $usuario, $clave, $baseDeDatos, $puerto);
 
-//3. Comprobar si la conexión fue exitosa.
+//3. Comprobar si la conexiÃ³n fue exitosa.
 if (mysqli_connect_errno()) {
-    echo "Error al conectarse a la base de datos: " . mysqli_connect_error(); //Esta función almacena el error ocurrido.
+    echo "Error al conectarse a la base de datos: " . mysqli_connect_error(); //Esta funciÃ³n almacena el error ocurrido.
 }
 else {
     echo "Conexion a la base de datos exitosa";

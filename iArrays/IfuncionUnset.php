@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-unset($nombres[2]); //Esta función elimina el elemento ubicado en un indice especifico de un Array.
+unset($nombres[2]); //Esta funciÃ³n elimina el elemento ubicado en un indice especifico de un Array.
 
 foreach ($nombres as $nombre) {
     echo $nombre . "<br/>";

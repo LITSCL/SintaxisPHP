@@ -10,10 +10,10 @@
 </html>
 	
 <?php
-//NOTA: Las variables locales son las que se definen dentro de una funci髇 y no pueden ser usadas fuera de la funci髇 (A menos que se retorne en la funci髇).
+//NOTA: Las variables locales son las que se definen dentro de una funci贸n y no pueden ser usadas fuera de la funci贸n (A menos que se retorne en la funci贸n).
 
 function imprimeFrase() {
-    $frase = "Ni los genios son tan genios, ni los mediocres tan mediocres"; //Esta variable es local (No se puede utilizar afura de la funci髇).
+    $frase = "Ni los genios son tan genios, ni los mediocres tan mediocres"; //Esta variable es local (No se puede utilizar afura de la funci贸n).
     echo "<h3>$frase</h3>";
 }
 

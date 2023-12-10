@@ -10,7 +10,7 @@ class Persona {
 		$this->ciudad = $ciudad;
 	}
 	
-	public function __call($nombre, $argumento) { //Este método se ejecuta cuando se utiliza un método que no existe.
+	public function __call($nombre, $argumento) { //Este mÃ©todo se ejecuta cuando se utiliza un mÃ©todo que no existe.
 		echo "El metodo " . $nombre . " no existe";
 	}
 }

@@ -12,20 +12,20 @@
 <?php
 $numero1 = 10;
 
-switch ($numero1) { //Valor a tomar en consideraci髇.
-    case 7: //Si el valor a tomar en consideraci髇 es igual a 7, se ejecuta el c骴igo.
+switch ($numero1) { //Valor a tomar en consideraci贸n.
+    case 7: //Si el valor a tomar en consideraci贸n es igual a 7, se ejecuta el c贸digo.
         echo "Se ejecuto el primer case";
         break;
-    case 8: //Si el valor a tomar en consideraci髇 es igual a 8, se ejecuta el c骴igo.
+    case 8: //Si el valor a tomar en consideraci贸n es igual a 8, se ejecuta el c贸digo.
         echo "Se ejecuto el segundo case";
         break;
-    case 9: //Si el valor a tomar en consideraci髇 es igual a 9, se ejecuta el c骴igo.
+    case 9: //Si el valor a tomar en consideraci贸n es igual a 9, se ejecuta el c贸digo.
         echo "Se ejecuto el tercer case";
         break;
-    case 10: //Si el valor a tomar en consideraci髇 es igual a 10, se ejecuta el c骴igo.
+    case 10: //Si el valor a tomar en consideraci贸n es igual a 10, se ejecuta el c贸digo.
         echo "Se ejecuto el cuarto case";
         break;
-    default: //Si ningun case resulta, se ejecuta el c骴igo del default.
+    default: //Si ningun case resulta, se ejecuta el c贸digo del default.
         echo "Se ejecuto el default";
         break;
 }

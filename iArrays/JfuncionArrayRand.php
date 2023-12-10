@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-$indice = array_rand($nombres); //La función array_rand(), permite obtener un indice aleatorio del Array entregado por parámetro.
+$indice = array_rand($nombres); //La funciÃ³n array_rand(), permite obtener un indice aleatorio del Array entregado por parÃ¡metro.
 
 echo $nombres[$indice];
 ?>

@@ -7,8 +7,8 @@
 <body>
 
 <?php 
-//NOTA: Un include en PHP permite incorporar código de otros ficheros en el fichero actual (Esto es mu útil para crear una cabecera personalizada (Similar a un componente Angular)).
-include "includes/cabecera.php"; //Aquí se esta incluyendo todo el código del fichero "cabecera.php" ubicado en la carpeta includes.
+//NOTA: Un include en PHP permite incorporar cÃ³digo de otros ficheros en el fichero actual (Esto es mu Ãºtil para crear una cabecera personalizada (Similar a un componente Angular)).
+include "includes/cabecera.php"; //AquÃ­ se esta incluyendo todo el cÃ³digo del fichero "cabecera.php" ubicado en la carpeta includes.
 ?>
 	
 	<div>

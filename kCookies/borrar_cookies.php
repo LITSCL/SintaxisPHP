@@ -13,7 +13,7 @@
 
 <?php
 if ($_COOKIE["miCookie1"]) {
-    setcookie("miCookie1", "", time() - 100); //Aquí se cadua la cookie (Al caducarla el servidor ya no la toma en cuenta).
+    setcookie("miCookie1", "", time() - 100); //AquÃ­ se cadua la cookie (Al caducarla el servidor ya no la toma en cuenta).
 }
 
 if ($_COOKIE["miCookie2"]) {

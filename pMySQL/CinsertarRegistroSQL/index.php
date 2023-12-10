@@ -17,11 +17,11 @@ else {
     $sql = "INSERT INTO persona VALUES(null, 'Jorge', '42', 'amarillo')";
     
     //2. Realizar la consulta SQL.
-    $query = mysqli_query($conexion, $sql); //Esta funciÛn permite realizar una consulta SQL a una base de datos, el primer par·metro es la configuraciÛn de la conexiÛn y el segundo par·metro es la sentencia SQL.
+    $query = mysqli_query($conexion, $sql); //Esta funci√≥n permite realizar una consulta SQL a una base de datos, el primer par√°metro es la configuraci√≥n de la conexi√≥n y el segundo par√°metro es la sentencia SQL.
     
     echo "<br>";
     
-    //3. Comprobar si la consulta funcionÛ.
+    //3. Comprobar si la consulta funcion√≥.
     if ($query) {
         echo "Datos insertados correctamente";
     }

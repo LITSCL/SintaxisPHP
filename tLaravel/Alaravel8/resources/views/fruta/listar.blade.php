@@ -1,8 +1,8 @@
 <h1>Listado de frutas</h1>
 
-@if (session("estado")) {{-- Verificando que exista la sesión "estado". --}}
+@if (session("estado")) {{-- Verificando que exista la sesiÃ³n "estado". --}}
 	<p style="background: green; color: white; width: 178px">
-		{{ session("estado") }} {{-- Mostrando el valor de la sesión --}}
+		{{ session("estado") }} {{-- Mostrando el valor de la sesiÃ³n --}}
 	</p>
 @endif
 <ul>

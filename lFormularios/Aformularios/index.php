@@ -8,7 +8,7 @@
 	<h1>Formulario</h1>
 	<form action="recibir.php" method="POST">
 		<label for="nombre">Nombre</label><br/>
-		<input type="text" name="nombre" autofocus="autofocus"/><br/> <!-- El atributo "autofocus" con valor autofocus, realiza un focus por defecto en el input al cargar la página. -->
+		<input type="text" name="nombre" autofocus="autofocus"/><br/> <!-- El atributo "autofocus" con valor autofocus, realiza un focus por defecto en el input al cargar la pÃ¡gina. -->
 		
 		<label for="apellido">Apellido</label><br/>
 		<input type="text" name="apellido" /><br/>
@@ -35,7 +35,7 @@
 		<input type="file" name="archivo" multiple/><br/> <!-- El atributo multiple permite que el usuario pueda subir mas de un archivo a la vez. -->
 				
 		<label for="idioma">Idioma</label><br/>
-		<input type="text" name="idioma" required/><br/> <!-- El atributo required evita que un input se envíe sin datos. -->
+		<input type="text" name="idioma" required/><br/> <!-- El atributo required evita que un input se envÃ­e sin datos. -->
 		
 		<label for="lenguaje">Lenguaje</label>
 		<p>

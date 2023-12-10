@@ -7,7 +7,7 @@ class Usuario {
 		echo "Creando el objeto";
 	}
 	
-	public function __destruct() { //Este método se ejecuta si existe un objeto perteneciente a esta clase y si se leyó la última instrucción de la página.
+	public function __destruct() { //Este mÃ©todo se ejecuta si existe un objeto perteneciente a esta clase y si se leyÃ³ la Ãºltima instrucciÃ³n de la pÃ¡gina.
 		echo "Destruyendo el objeto";
 	}
 }

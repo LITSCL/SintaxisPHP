@@ -1,3 +1,3 @@
-<!-- Extender de una plantilla permite reutilizar codigo generico, el cual puede ser modificado desde donde se esté importando. -->
+<!-- Extender de una plantilla permite reutilizar codigo generico, el cual puede ser modificado desde donde se estÃ¡ importando. -->
 
-@extends('layouts.master') <!-- Aquí se incluye el layout. -->
+@extends('layouts.master') <!-- AquÃ­ se incluye el layout. -->

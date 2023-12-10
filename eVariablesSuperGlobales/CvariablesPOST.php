@@ -22,9 +22,9 @@
 	
 <?php
 //NOTA: Las variables super globales son variables brinda PHP y pueden ser accedidas desde cualquier script PHP.
-echo $_POST["nombre"]; //La variable super global "$_POST" permite recibir un parámetro por el método post.
+echo $_POST["nombre"]; //La variable super global "$_POST" permite recibir un parÃ¡metro por el mÃ©todo post.
 echo "<br/>";
 echo $_POST["edad"];
 
-//NOTA: Se generará un error si no se están enviando los datos del formulario (Esto sucede porque se está intentando acceder a un valor que todavía no existe).
+//NOTA: Se generarÃ¡ un error si no se estÃ¡n enviando los datos del formulario (Esto sucede porque se estÃ¡ intentando acceder a un valor que todavÃ­a no existe).
 ?>

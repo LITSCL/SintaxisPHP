@@ -20,7 +20,7 @@ function retornarApellido($apellido) {
 }
 
 function retornarNombreAndApellido($nombre, $apellido) {
-     $nombreAndApellido = retornarNombre($nombre) . "<br/>" . retornarApellido($apellido); //En esta instrucción se estan llamando funciones que estan afuera.
+     $nombreAndApellido = retornarNombre($nombre) . "<br/>" . retornarApellido($apellido); //En esta instrucciÃ³n se estan llamando funciones que estan afuera.
      return $nombreAndApellido;
 }
 

@@ -16,10 +16,10 @@ class VerificaYear
      */
     public function handle(Request $request, Closure $next)
     {
-    	$year = $request->route("year"); //Recibiendo el par·metro.
+    	$year = $request->route("year"); //Recibiendo el par√°metro.
     	
-    	if (is_null($year) || $year != 2021) { //Validando el par·metro.
-    		return redirect("/"); //Si el par·metro no es 2021 se redirige a la raiz.
+    	if (is_null($year) || $year != 2021) { //Validando el par√°metro.
+    		return redirect("/"); //Si el par√°metro no es 2021 se redirige a la ra√≠z.
     	}
     	
         return $next($request);

@@ -3,7 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert; //Necesario para añadir validaciones en los formularios.
+use Symfony\Component\Validator\Constraints as Assert; //Necesario para aÃ±adir validaciones en los formularios.
 
 /**
  * Juego

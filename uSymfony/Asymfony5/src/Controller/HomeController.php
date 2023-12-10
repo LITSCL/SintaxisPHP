@@ -45,9 +45,9 @@ class HomeController extends AbstractController
     
     public function redirigir()
     {
-    	//return $this->redirectToRoute("index"); //El mÈtodo "redirectToRoute" permite redirigir a una ruta utilizando su nombre.
-    	//return $this->redirectToRoute("persona", ["nombre" => "Esteban", "Apellido" => "Alvarez", "edad" => "23"]); //El mÈtodo "redirectToRoute" tambiÈn permite enviar datos a la ruta mediante un array asociativo.
-    	return $this->redirect("https://www.google.com/"); //El mÈtodo "redirect" permite redirigir a una URL especificada por par·metro.
+    	//return $this->redirectToRoute("index"); //El m√©todo "redirectToRoute" permite redirigir a una ruta utilizando su nombre.
+    	//return $this->redirectToRoute("persona", ["nombre" => "Esteban", "Apellido" => "Alvarez", "edad" => "23"]); //El m√©todo "redirectToRoute" tambi√©n permite enviar datos a la ruta mediante un array asociativo.
+    	return $this->redirect("https://www.google.com/"); //El m√©todo "redirect" permite redirigir a una URL especificada por par√°metro.
     }
     
     public function plantilla()

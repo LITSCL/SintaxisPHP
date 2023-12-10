@@ -10,17 +10,17 @@
 </html>
 	
 <?php
-//Ejemplo de funci髇 sin return.
-function imprimeHolaMundo() { //Se crea una funci髇.
-    echo "Hola Mundo" . "<br/>"; //Contenido de la funci髇.
+//Ejemplo de funci贸n sin return.
+function imprimeHolaMundo() { //Se crea una funci贸n.
+    echo "Hola Mundo" . "<br/>"; //Contenido de la funci贸n.
 }
 
-imprimeHolaMundo(); //Llamando a la funci髇.
+imprimeHolaMundo(); //Llamando a la funci贸n.
 
-//Ejemplo de funci髇 con return.
-function imprimeHelloWorld() { //Se crea una funci髇.
-    return "Hello World"; //Contenido de la funci髇.
+//Ejemplo de funci贸n con return.
+function imprimeHelloWorld() { //Se crea una funci贸n.
+    return "Hello World"; //Contenido de la funci贸n.
 }
 
- echo imprimeHelloWorld(); //Llamando a la funci髇.
+ echo imprimeHelloWorld(); //Llamando a la funci贸n.
 ?>

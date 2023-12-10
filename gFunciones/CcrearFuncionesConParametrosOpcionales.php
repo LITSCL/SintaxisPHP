@@ -10,7 +10,7 @@
 </html>
 	
 <?php
-function calculadora($numero1, $numero2, $negrita = false) { //Al inicializar el parámetro, se considera que es opcional y no es necesario entregarlo en la llamada.
+function calculadora($numero1, $numero2, $negrita = false) { //Al inicializar el parÃ¡metro, se considera que es opcional y no es necesario entregarlo en la llamada.
     if ($negrita != false) {
         echo "<h4>";
     }
@@ -23,5 +23,5 @@ function calculadora($numero1, $numero2, $negrita = false) { //Al inicializar el
     }
 }
 
-calculadora(20, 20); //Llamada de la función entregando dos parámetros.
+calculadora(20, 20); //Llamada de la funciÃ³n entregando dos parÃ¡metros.
 ?>

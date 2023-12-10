@@ -22,7 +22,7 @@ $html = '
 ';
 
 $dompdf = new Dompdf();
-$dompdf->load_html($html); //Aquí se carga la plantilla HTML al PDF.
-$dompdf->render(); //Aquí se renderiza la plantilla HTML.
-$dompdf->stream("documento.pdf", array("Attachment" => "0")); //Aquí se muestra el PDF en el navegador.
+$dompdf->load_html($html); //AquÃ­ se carga la plantilla HTML al PDF.
+$dompdf->render(); //AquÃ­ se renderiza la plantilla HTML.
+$dompdf->stream("documento.pdf", array("Attachment" => "0")); //AquÃ­ se muestra el PDF en el navegador.
 ?>

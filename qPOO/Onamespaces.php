@@ -1,7 +1,7 @@
-<?php require_once "Ohelpers/autoload.php"; //Para importar utilizando namespace, también es necesario utilizar el require_once. ?>
+<?php require_once "Ohelpers/autoload.php"; //Para importar utilizando namespace, tambiÃ©n es necesario utilizar el require_once. ?>
 
 <?php
-//Importar con "namespace" se utiliza en los frameworks, además, permite importar 2 clases con el mismo nombre.
+//Importar con "namespace" se utiliza en los frameworks, ademÃ¡s, permite importar 2 clases con el mismo nombre.
 
 use MisClases\Categoria; //Importando una primera clase llamada "Categoria" utilizando el namespace.
 use MisClases\Persona;

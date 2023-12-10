@@ -12,10 +12,10 @@
 	</form>
 	<h1>Listado de imagenes</h1>
 	<?php 
-	$directorio = opendir("./imagenes"); //Aquí se almacena todo el contenido dentro del directorio.
+	$directorio = opendir("./imagenes"); //AquÃ­ se almacena todo el contenido dentro del directorio.
 	
 	if ($directorio == true) { //Se verifica que se pudo acceder al directorio (Que hay archivos).
-	    while (($imagen = readdir($directorio)) != false) { //Aquí se recorren todos los archivos del directorio (Siempre que haya un archivo que recorrer, el valor de la variable será true). La variable también contiene el archivo.
+	    while (($imagen = readdir($directorio)) != false) { //AquÃ­ se recorren todos los archivos del directorio (Siempre que haya un archivo que recorrer, el valor de la variable serÃ¡ true). La variable tambiÃ©n contiene el archivo.
 	        if ($imagen != "." && $imagen != "..") {
 	            echo "<img src='imagenes/$imagen' width='200px'/><br/>";
 	        }

@@ -14,12 +14,12 @@ if (mysqli_connect_errno()) {
 else {
     echo "Conexion a la base de datos exitosa";
     //1. Realizar la consulta SQL.
-    $query = mysqli_query($conexion, "SELECT * FROM persona"); //Esta funci髇 permite realizar una consulta SQL a una base de datos, el primer par醡etro es la configuraci髇 de la conexi髇 y el segundo par醡etro es la sentencia SQL.
+    $query = mysqli_query($conexion, "SELECT * FROM persona"); //Esta funci贸n permite realizar una consulta SQL a una base de datos, el primer par谩metro es la configuraci贸n de la conexi贸n y el segundo par谩metro es la sentencia SQL.
     
     echo "<br>";
     
     //2. Mostrar los datos que contiene el resultado de la consulta.
-    while ($persona = mysqli_fetch_assoc($query)) { //Esta funci髇 convierte el resultado de la consulta en un array asociativo (Similar a un ResulSet de Java).
+    while ($persona = mysqli_fetch_assoc($query)) { //Esta funci贸n convierte el resultado de la consulta en un array asociativo (Similar a un ResulSet de Java).
         echo $persona["id"] . " " . $persona["nombre"] . "<br/>";
     } 
 }

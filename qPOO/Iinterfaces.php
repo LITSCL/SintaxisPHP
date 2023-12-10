@@ -1,7 +1,7 @@
 <?php
-//Una interface permite definir métodos para luego implementarlos en una o varias clases.
+//Una interface permite definir mÃ©todos para luego implementarlos en una o varias clases.
 interface Notebook {
-	public function encender(); //Definiendo método de la interface.
+	public function encender(); //Definiendo mÃ©todo de la interface.
 	public function apagar();
 }
 ?>
@@ -18,7 +18,7 @@ class NotebookLenovo implements Notebook { //Esta clase implementa la interface 
         $this->modelo = $modelo;
     }
     
-	public function encender() { //Iniciando método de la interface.
+	public function encender() { //Iniciando mÃ©todo de la interface.
 		return "Notebook encendido";
 	}
 

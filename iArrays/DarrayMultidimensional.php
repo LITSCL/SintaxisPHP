@@ -10,7 +10,7 @@
 </html>
 
 <?php 
-//En esta caso se creará un Array multidimensional, el cual contiene 3 Arrays asociativos.
+//En esta caso se crearÃ¡ un Array multidimensional, el cual contiene 3 Arrays asociativos.
 $contactos = array( //Un Array multidimensional es un array de arrays.
     array(
         "nombre" => "Daniel",

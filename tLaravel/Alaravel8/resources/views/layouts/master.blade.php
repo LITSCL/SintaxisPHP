@@ -7,7 +7,7 @@
 	<title>Titulo - @yield('titulo')</title> <!-- La etiqueta "yield" permite declarar una variable la cual se debe iniciar en donde se incluya el layout. -->
 </head>
 <body>
-	@section('header') <!-- La etiqueta "section" permite agrupar una sección de código HTML para luego importarlo en la página donde se incluya este layout. -->
+	@section('header') <!-- La etiqueta "section" permite agrupar una secciÃ³n de cÃ³digo HTML para luego importarlo en la pÃ¡gina donde se incluya este layout. -->
 		<h2>CABECERA DE LA PAGINA (Master)</h2>
 	@show
 	

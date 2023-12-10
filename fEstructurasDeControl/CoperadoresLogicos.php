@@ -13,21 +13,21 @@
 $numero1 = 10;
 $numero2 = -5;
 
-//Operador l骻ico and (&&).
+//Operador l贸gico and (&&).
 echo "Operador logico and (&&):<br/>";
 
 if ($numero1 > 0 && $numero2 < 0) {
-    echo "Ambas condiciones se cumplen<br/>"; //Si ambas condiciones se cumplen se ejecuta la instrucci髇.
+    echo "Ambas condiciones se cumplen<br/>"; //Si ambas condiciones se cumplen se ejecuta la instrucci贸n.
 }
 else {
     echo "Una condicion o ambas no se estan cumpliendo<br/>";
 }
 
-//Operador l骻ico or (||).
+//Operador l贸gico or (||).
 echo "Operador logico or (||):<br/>";
 
 if ($numero1 > 0 || $numero2 < 0) {
-    echo "Una o ambas condiciones se estan cumpliendo<br/>"; //Con que una condici髇 se cumpla se ejecuta la instrucci髇.
+    echo "Una o ambas condiciones se estan cumpliendo<br/>"; //Con que una condici贸n se cumpla se ejecuta la instrucci贸n.
 }
 else {
     echo "Ninguna condicion se esta cumpliendo";

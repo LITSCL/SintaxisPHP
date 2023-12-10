@@ -10,12 +10,12 @@
 </html>
 
 <?php
-//PHP incluye varias constantes predefinidas, las cuales permiten obtener variada información.
-echo PHP_OS; //Aquí se esta mostrando en pantalla el Sistema operativo del PC.
+//PHP incluye varias constantes predefinidas, las cuales permiten obtener variada informaciÃ³n.
+echo PHP_OS; //AquÃ­ se esta mostrando en pantalla el Sistema operativo del PC.
 echo "<br/>";
-echo PHP_VERSION; //Aquí se esta mostrando en pantalla la versión de PHP que se esta utilizando.
+echo PHP_VERSION; //AquÃ­ se esta mostrando en pantalla la versiÃ³n de PHP que se esta utilizando.
 echo "<br/>";
-echo __LINE__; //Aquí se esta mostrando en pantalla el número de línea de esta instrucción.
+echo __LINE__; //AquÃ­ se esta mostrando en pantalla el nÃºmero de lÃ­nea de esta instrucciÃ³n.
 echo "<br/>";
-echo __FILE__; //Aquí se esta mostrando en pantalla la ruta de este archivo PHP.
+echo __FILE__; //AquÃ­ se esta mostrando en pantalla la ruta de este archivo PHP.
 ?>

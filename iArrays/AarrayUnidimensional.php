@@ -10,16 +10,16 @@
 </html>
 
 <?php 
-//NOTA: Un array es una colección de datos, basicamente una variable que puede almacenar muchos datos distintos.
+//NOTA: Un array es una colecciÃ³n de datos, basicamente una variable que puede almacenar muchos datos distintos.
 
-//Declaración de un array unidimensional.
+//DeclaraciÃ³n de un array unidimensional.
 $array1 = array();
 
-//Iniciación los indices del array.
+//IniciaciÃ³n los indices del array.
 $array1[0] = "PHP";
 $array1[1] = 50;
-$array1[2] = true; //En PHP no se pueden mostrar los boolean así.
-$array1[3] = false; //En PHP no se pueden mostrar los boolean así.
+$array1[2] = true; //En PHP no se pueden mostrar los boolean asÃ­.
+$array1[3] = false; //En PHP no se pueden mostrar los boolean asÃ­.
 $array1[4] = 15.5;
 
 //Forma 1: Proceso de muestreo en consola del contenido del array1.
@@ -34,8 +34,8 @@ var_dump($array1);
 
 echo "<hr/>";
 
-//Declaración e iniciación de un array unidimensional en una línea.
-$array2 = ["PHP", 50, true, false, 15.5]; //En esta instrucción se esta creando el array y entregando 5 elementos.
+//DeclaraciÃ³n e iniciaciÃ³n de un array unidimensional en una lÃ­nea.
+$array2 = ["PHP", 50, true, false, 15.5]; //En esta instrucciÃ³n se esta creando el array y entregando 5 elementos.
 
 //Proceso de muestreo en consola del contenido del array2.
 echo $array2[0] . "<br/>";

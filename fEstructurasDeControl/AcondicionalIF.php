@@ -13,10 +13,10 @@
 $numero1 = 10;
 $numero2 = 15;
 
-if ($numero1 < $numero2) { //En esta instrucci髇 se eval鷄 la condici髇.
-    echo $numero1 . " es menor que " . $numero2; //Si la condici髇 se cumple se ejecuta este c骴igo.
+if ($numero1 < $numero2) { //En esta instrucci贸n se eval煤a la condici贸n.
+    echo $numero1 . " es menor que " . $numero2; //Si la condici贸n se cumple se ejecuta este c贸digo.
 }
 else {
-    echo $numero1 . " es mayor que " . $numero2; //Si la condici髇 no se cumple se ejecuta este c骴igo.
+    echo $numero1 . " es mayor que " . $numero2; //Si la condici贸n no se cumple se ejecuta este c贸digo.
 }
 ?>

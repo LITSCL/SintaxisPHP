@@ -11,12 +11,12 @@
 </html>
 
 <?php 
-//Sesi髇: Sirven para almacenar y persistir datos del usuario mientras navega en un sitio web.
+//Sesi贸n: Sirven para almacenar y persistir datos del usuario mientras navega en un sitio web.
 
-//Iniciar la sesi髇.
-session_start(); //Esto es necesario para que el fichero pueda crear, acceder o destruir las variables de sesi髇.
+//Iniciar la sesi贸n.
+session_start(); //Esto es necesario para que el fichero pueda crear, acceder o destruir las variables de sesi贸n.
 
-echo $_SESSION["variable_persistente1"]; //Mostrando el valor de la sesi髇.
+echo $_SESSION["variable_persistente1"]; //Mostrando el valor de la sesi贸n.
 echo "<br/>";
 echo $_SESSION["variable_persistente2"];
 ?>

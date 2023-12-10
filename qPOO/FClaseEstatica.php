@@ -1,12 +1,12 @@
 <?php
-//Las clases estaticas permiten acceder a los atributos y métodos de la clase sin necesidad de instanciar un objeto.
+//Las clases estaticas permiten acceder a los atributos y mÃ©todos de la clase sin necesidad de instanciar un objeto.
 class Persona {
 	public static $nombre; //Atributo estatico.
 	public static $altura;
 	public static $edad;
 	
-	public static function getNombre() { //método estatico.
-        return Persona::$nombre; //El código "Persona::" es equivalente a "this->".
+	public static function getNombre() { //mÃ©todo estatico.
+        return Persona::$nombre; //El cÃ³digo "Persona::" es equivalente a "this->".
     }
 
 	public static function getAltura() {

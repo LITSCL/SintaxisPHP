@@ -9,11 +9,11 @@
 <?php 
 include_once "includes/cabecera.php"; //Al utilizar include_once, se indica que el fichero no se puede volver a incluir (Sirve cuando un include se encuentra en un bucle y deseas que se coloque una sola vez).
 include_once "includes/cabecera.php";
-//include "includes/cabecera.php"; //Esto si funcionará, si se incluye en "once", se podrá volver a incluir el fichero.
+//include "includes/cabecera.php"; //Esto si funcionarÃ¡, si se incluye en "once", se podrÃ¡ volver a incluir el fichero.
 ?>
 	<div>
 	   <?php 
-	   echo $mensaje; //Al incluir un fichero PHP, también se puede hacer uso de sus variables.
+	   echo $mensaje; //Al incluir un fichero PHP, tambiÃ©n se puede hacer uso de sus variables.
 	   ?>
 	</div>
 	
