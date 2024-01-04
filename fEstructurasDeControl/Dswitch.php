@@ -10,9 +10,9 @@
 </html>
 	
 <?php
-$numero1 = 10;
+$numero = 10;
 
-switch ($numero1) { //Valor a tomar en consideración.
+switch ($numero) { //Valor a tomar en consideración.
     case 7: //Si el valor a tomar en consideración es igual a 7, se ejecuta el código.
         echo "Se ejecuto el primer case";
         break;
