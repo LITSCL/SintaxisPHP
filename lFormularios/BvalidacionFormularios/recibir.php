@@ -31,10 +31,12 @@ if (isset($_POST["nombre"]) &&
             $error = "El nombre esta vacio";          
         }
         
+        //Validar el apellido.
         if (empty(trim($apellido))) {
             $error = "El apellido esta vacio";
         }
         
+        //Validar la edad.
         if (empty(trim($edad)) || is_numeric($edad) == false || strlen($edad) < 3) {
             if (empty(trim($edad))) {
                 $error = "La edad esta vacia";
@@ -47,6 +49,7 @@ if (isset($_POST["nombre"]) &&
             }
         }
         
+        //Validar la clave.
         if (empty(trim($clave))) {
             $error = "La clave esta vacia";
         }

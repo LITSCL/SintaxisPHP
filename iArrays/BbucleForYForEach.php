@@ -21,14 +21,14 @@ $array[2] = "JavaScript";
 $array[3] = "Python"; 
 $array[4] = "C#";
 
-//Recorriendo Array con bucle for.
-for ($i = 0; $i < count($array); $i++) { //El método count retorna la cantidad de indices que tiene el Array.
+//Recorriendo array con bucle For.
+for ($i = 0; $i < count($array); $i++) { //El método count retorna la cantidad de indices que tiene el array.
     echo $array[$i] . "<br/>";
 }
 
 echo "<hr/>";
 
-//Recorriendo Array con bucle Foreach.
+//Recorriendo array con bucle Foreach.
 foreach ($array as $lenguaje) { //El bucle foreach recibe el array a recorrer y una variable en la cual se almacena el valor del indice del array.
     echo $lenguaje . "<br/>";
 }

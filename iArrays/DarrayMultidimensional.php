@@ -10,8 +10,8 @@
 </html>
 
 <?php 
-//En esta caso se creará un Array multidimensional, el cual contiene 3 Arrays asociativos.
-$contactos = array( //Un Array multidimensional es un array de arrays.
+//En esta caso se creará un array multidimensional, el cual contiene 3 arrays asociativos.
+$contactos = array( //Un array multidimensional es un array de arrays.
     array(
         "nombre" => "Daniel",
         "email" => "daniel@protonmail.com"
@@ -26,7 +26,7 @@ $contactos = array( //Un Array multidimensional es un array de arrays.
     )
 );
 
-echo $contactos[2]["nombre"]; //Eligiendo el Array con indice 2 y mostrando el valor del indice "nombre".
+echo $contactos[2]["nombre"]; //Eligiendo el array con indice 2 y mostrando el valor del indice "nombre".
 
 echo "<hr><h4>Recorriendo Array en bucle foreach anidado</h4>";
 

@@ -56,7 +56,6 @@ if (isset($_GET["error"])) {
     if ($error == "La clave es demasiado corta") {
         echo "<strong style='color: red'>La clave es demasiado corta</strong>";
     }
-    
 }
 if (isset($_GET["exito"])) {
     $exito = $_GET["exito"];

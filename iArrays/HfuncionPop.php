@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-array_pop($nombres); //Esta función elimina el último elemento del Array entregado por parámetro.
+array_pop($nombres); //Esta función elimina el último elemento del array entregado por parámetro.
 
 foreach ($nombres as $nombre) {
     echo $nombre . "<br/>";

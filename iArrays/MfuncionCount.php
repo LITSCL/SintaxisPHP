@@ -12,5 +12,5 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-echo count($nombres); //La función count(), retorna la cantidad de elementos que tiene el Array entregado por parámetro.
+echo count($nombres); //La función count(), retorna la cantidad de elementos que tiene el array entregado por parámetro.
 ?>

@@ -12,7 +12,7 @@
 <?php 
 $nombres = array("Daniel", "Esteban", "Maria", "Mabel", "Andy");
 
-asort($nombres); //La función asort(), permite ordenar alfabeticamente de forma ascendente los indices de un Array.
+asort($nombres); //La función asort(), permite ordenar alfabeticamente de forma ascendente los indices de un array.
 
 foreach ($nombres as $nombre) {
     echo $nombre . "<br/>";

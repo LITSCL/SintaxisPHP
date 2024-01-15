@@ -15,7 +15,7 @@
 //Declaración de un array unidimensional.
 $array1 = array();
 
-//Iniciación los indices del array.
+//Iniciación de los indices del array.
 $array1[0] = "PHP";
 $array1[1] = 50;
 $array1[2] = true; //En PHP no se pueden mostrar los boolean así.
@@ -34,7 +34,7 @@ var_dump($array1);
 
 echo "<hr/>";
 
-//Declaración e iniciación de un array unidimensional en una línea.
+//Declaración de iniciación de un array unidimensional en una línea.
 $array2 = ["PHP", 50, true, false, 15.5]; //En esta instrucción se esta creando el array y entregando 5 elementos.
 
 //Proceso de muestreo en consola del contenido del array2.

@@ -13,7 +13,7 @@
 //NOTA: Un array es una colección de datos, basicamente una variable que puede almacenar muchos datos distintos.
 
 //Declaración e iniciación de un array unidimensional.
-$personas = array("nombre" => "Daniel", "apellido" => "Alvarez"); //Un Array asociativo permite utilizar "Claves" en vez de "Indices".
+$personas = array("nombre" => "Daniel", "apellido" => "Alvarez"); //Un array asociativo permite utilizar "Claves" en vez de "Indices".
 
 echo $personas["nombre"]; //Imprimiendo el valor del indice nombre.
 
