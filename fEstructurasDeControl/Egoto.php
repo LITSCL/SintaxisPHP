@@ -20,5 +20,5 @@ echo "<p>Instruccion 3</p>";
 echo "<p>Instruccion 4</p>";
 
 marca:
-echo "<p>Se han saltado 4 insutrcciones</p>";
+echo "<p>Se han saltado 4 instrucciones</p>";
 ?>
