@@ -15,7 +15,7 @@
 $frase = "Ni los genios son tan genios, ni los mediocres tan mediocres"; //Esta variable puede ser global.
 
 function imprimeFrase() {
-    global $frase; //Aquí se indica que la variable se global (Es una variable que no pertenece a la función, pero de todas formas se puede utilizar).
+    global $frase; //Aquí se indica que la variable es global (Es una variable que no pertenece a la función, pero de todas formas se puede utilizar).
     echo "<h3>$frase</h3>";
 }
 

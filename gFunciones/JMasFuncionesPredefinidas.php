@@ -26,7 +26,7 @@ else {
     echo 'La variable $numero es de tipo integer' . "<br/>";
 }
 
-if (isset($holaMundo)) { //La función isset() Comprueba si la variable entregada pro parámetro existe, en caso de que exista retorna true y en caso contrario retorna false.
+if (isset($holaMundo)) { //La función isset() comprueba si la variable entregada pro parámetro existe, en caso de que exista retorna true y en caso contrario retorna false.
     echo 'La variable $holaMundo si existe' . "<br/>";
 }
 else {

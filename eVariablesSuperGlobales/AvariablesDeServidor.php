@@ -9,7 +9,7 @@
 </body>
 </html>
 <?php
-//NOTA: Las variables super globales son variables brinda PHP y pueden ser accedidas desde cualquier script PHP.
+//NOTA: Las variables super globales son variables brinda PHP por defecto y pueden ser accedidas desde cualquier script PHP.
 echo $_SERVER["SERVER_ADDR"]; //Esta variable super global obtiene la dirección IP del servidor.
 echo "<br/>";
 echo $_SERVER["SERVER_NAME"]; //Esta variable super global obtiene el nombre de dominio del servidor.

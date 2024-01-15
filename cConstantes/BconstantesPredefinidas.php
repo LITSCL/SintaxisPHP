@@ -10,7 +10,7 @@
 </html>
 
 <?php
-//PHP incluye varias constantes predefinidas, las cuales permiten obtener variada información.
+//PHP incluye varias constantes predefinidas, las cuales permiten obtener variada información del sistema.
 echo PHP_OS; //Aquí se esta mostrando en pantalla el Sistema operativo del PC.
 echo "<br/>";
 echo PHP_VERSION; //Aquí se esta mostrando en pantalla la versión de PHP que se esta utilizando.

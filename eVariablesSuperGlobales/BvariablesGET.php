@@ -21,7 +21,7 @@
 </html>
 	
 <?php
-//NOTA: Las variables super globales son variables brinda PHP y pueden ser accedidas desde cualquier script PHP.
+//NOTA: Las variables super globales son variables brinda PHP por defecto y pueden ser accedidas desde cualquier script PHP.
 echo $_GET["nombre"]; //La variable super global "$_GET" permite recibir un parámetro por el método get.
 echo "<br/>";
 echo $_GET["edad"];
